@@ -1,14 +1,14 @@
 var inn = '70810100107803'
 var firstNum = Number(inn[0])
-if((firstNum === 1 || firstNum === 2 || firstNum === 0) && inn.length === 14){
+if ((firstNum === 1 || firstNum === 2 || firstNum === 0) && inn.length === 14) {
     console.log('ИНН найден')
-}else {
+} else {
     console.error('ИНН не найден')
 }
 
 //switch..case
 var day = '';
-switch(new Date().getDay()){
+switch (new Date().getDay()) {
     case 0:
         day = 'Понедельник'
         break
@@ -36,7 +36,7 @@ switch(new Date().getDay()){
 console.log(day)
 
 var euSize = 's'
-switch(euSize){
+switch (euSize) {
     case 'S':
     case 's':
         console.log('42')
@@ -66,7 +66,7 @@ var objectUser = {
     number: 876543,
     address: null,
     isMarried: false,
-    object :{
+    object: {
         undef: undefined
     }
 }
@@ -84,6 +84,17 @@ console.log(Object.keys(objectUser))
 console.log(Object.values(objectUser))
 console.log(Object.entries(objectUser))
 console.log(objectUser.hasOwnProperty('name'))
+
+//7)bigint
+var int = 78n
+console.log(typeof int)
+//8)symbol
+
+//Not A Number
+var number = 90
+var text = 'qwerty'
+var result = number / text
+console.log(typeof result)
 
 
 
