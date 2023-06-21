@@ -110,3 +110,8 @@ function joinArray(array, separator = ',') {
 }
 
 console.log(joinArray([1, 1, 2, 3, 4], '/'))
+
+
+
+
+
