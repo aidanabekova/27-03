@@ -28,7 +28,6 @@ const allGroup = groups.map(function (i) {
     return `group ${i}`
 })
 console.log(allGroup)
-
 //замыкание
 function createPlayer(name) {
     let score = 0
@@ -43,7 +42,7 @@ const player2 = createPlayer('Bektur')
 
 //DOM- элементы
 
-document.querySelector('.btn').addEventListener('click', function () {
+document.querySelector('.btn').addEventListener('click', () => {
     console.log('вы нажали на кнопку')
 })
 
